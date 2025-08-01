@@ -1,0 +1,47 @@
+body {
+  width: 220px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#filters {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+#filters legend {
+  padding: 0 5px;
+  font-weight: bold;
+}
+
+#filters div {
+  margin-bottom: 5px;
+}
+
+#status-display {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#start-btn {
+  background-color: #dff0d8;
+}
+
+#stop-btn {
+  background-color: #f2dede;
+}

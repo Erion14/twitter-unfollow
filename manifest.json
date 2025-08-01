@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Unfollow",
+  "version": "1.0",
+  "description": "A simple extension to unfollow users on Twitter.",
+  "permissions": [
+    "storage",
+    "alarms",
+    "scripting",
+    "activeTab"
+  ],
+  "host_permissions": [
+    "https://x.com/*"
+  ],
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "options_page": "options/options.html",
+  "content_scripts": [
+    {
+      "matches": ["https://x.com/*/following"],
+      "js": ["content/scanner.js"]
+    }
+  ],
+  "background": { "service_worker": "background/sw.js" }
+}
+

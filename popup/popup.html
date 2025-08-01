@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Twitter Unfollow</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <h1>Twitter Unfollow</h1>
+
+  <fieldset id="filters">
+    <legend>Unfollow users if they...</legend>
+    <div>
+      <input type="checkbox" id="filter-not-verified" checked>
+      <label for="filter-not-verified">Aren't Verified</label>
+    </div>
+    <div>
+      <input type="checkbox" id="filter-not-following-you" checked>
+      <label for="filter-not-following-you">Don't Follow You Back</label>
+    </div>
+  </fieldset>
+
+  <div id="status-display">
+      Status: <span id="status-text">Idle</span><br>
+      Unfollowed: <span id="unfollow-count">0</span>
+  </div>
+  
+  <button id="start-btn">Start</button>
+  <button id="stop-btn" style="display:none;">Stop</button>
+  <script src="popup.js"></script>
+</body>
+</html>
